@@ -1,9 +1,11 @@
-# How to install a Humidity and a Temperature sensor on Arduino (DHT)
+# How to install a Humidity and a Temperature sensor to your NodeMCU (DHT)
 
 ## Step 1
-- Connect the right cable 5V
-- Connect the cable next to the right cable to 7 (or D7)
+- Connect the right cable to 5V
+- Connect the cable next to the right cable to 3 (or D3)
 - Connect the left cable to Ground (GND)
+
+![Connect DHT sensor to you NODEmcu](https://cdn.instructables.com/FBR/21OY/IDFSLSRV/FBR21OYIDFSLSRV.LARGE.jpg)
 
 ## Step 2
 Download the DHT sensor Library on Arduino 
@@ -22,7 +24,7 @@ When you’ve downloaded and installed the library, try this example code to see
 
 dht DHT;
 
-#define DHT11_PIN 7
+#define DHT11_PIN 3
 
 void setup(){
   Serial.begin(9600);
